@@ -1,5 +1,5 @@
 <?php get_header(); ?>
 
-<main>Hello world!</main>
+<main>This is the page.php theme file.</main>
 
 <?php get_footer(); ?>
