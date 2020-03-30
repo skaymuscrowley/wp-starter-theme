@@ -1,6 +1,8 @@
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?>>
 <head>
+
+    <!-- Meta Tags -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <?php
@@ -21,10 +23,15 @@
     ?>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fafafa">
+
+    <!-- Links -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/fonts/fontawesome/all.min.css">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png" type="image/png">
+
     <!-- WordPress Head -->
     <?php wp_head(); ?>
+    
 </head>
 <body <?php body_class(); ?>>
 
