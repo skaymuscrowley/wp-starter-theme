@@ -4,37 +4,37 @@
 // Enable post thumbnails
 // ========================================
 
-// add_theme_support('post-thumbnails');
+add_theme_support('post-thumbnails');
+
+// ========================================
+// Register custom menus
+// ========================================
+
+add_action( 'after_setup_theme', 'register_custom_nav_menus' );
+function register_custom_nav_menus() {
+	register_nav_menus( array(
+		'primary_nav' => 'Primary Navigation',
+		'footer_nav' => 'Footer Navigation',
+	) );
+}
+
+// ========================================
+// Add custom logo option
+// ========================================
+
+add_theme_support( 'custom-logo', array(
+    'height'      => 100,
+    'width'       => 400,
+    'flex-height' => true,
+    'flex-width'  => true,
+    'header-text' => array( 'site-title', 'site-description' ),
+) );
 
 // ========================================
 // Add custom image sizes
 // ========================================
 
 // add_image_size( 'custom-size', 0, 0 );
-
-// ========================================
-// Add custom logo option
-// ========================================
-
-// add_theme_support( 'custom-logo', array(
-//     'height'      => 100,
-//     'width'       => 400,
-//     'flex-height' => true,
-//     'flex-width'  => true,
-//     'header-text' => array( 'site-title', 'site-description' ),
-// ) );
-
-// ========================================
-// Register custom menus
-// ========================================
-
-// add_action( 'after_setup_theme', 'register_custom_nav_menus' );
-// function register_custom_nav_menus() {
-// 	register_nav_menus( array(
-// 		'primary_nav' => 'Primary Navigation',
-// 		'footer_nav' => 'Footer Navigation',
-// 	) );
-// }
 
 // ========================================
 // Add custom post types
